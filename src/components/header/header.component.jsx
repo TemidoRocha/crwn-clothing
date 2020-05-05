@@ -1,9 +1,12 @@
 import React from 'react';
+
 import { auth } from '../../firebase/firebase.utils';
 
 import './header.styles.scss';
-import { Link } from 'react-router-dom';
 import { ReactComponent as Logo } from './../../assets/crwn.svg';
+
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 const Header = ({ currentUser }) => (
   <div className="header">
@@ -30,4 +33,9 @@ const Header = ({ currentUser }) => (
   </div>
 );
 
-export default Header;
+const mapStateToProps = (state) => ({
+  currentUser: state.user.currentUser,
+});
+
+//connect is an high order function that taes two functions
+export default connect(mapStateToProps)(Header);
