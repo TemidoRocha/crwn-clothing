@@ -23,3 +23,6 @@ complete-react-developer-zero-to-mastery
 - https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
   .8 redux-persist - https://www.npmjs.com/package/redux-persist
 - Persist and rehydrate a redux store.
+
+8. Stripe
+- https://github.com/azmenak/react-stripe-checkout#send-all-the-props
