@@ -35,3 +35,8 @@ https://crwn-temidorocha.herokuapp.com/
 
 - https://devcenter.heroku.com/articles/heroku-cli
 - https://github.com/mars/create-react-app-buildpack
+
+10. CSS in JS
+
+- http://getbem.com/
+- https://styled-components.com/
