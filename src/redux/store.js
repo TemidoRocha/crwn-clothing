@@ -5,7 +5,12 @@ import logger from 'redux-logger';
 import rootReducer from './root-reducer';
 
 //the idea of middlewares is that if we want to add middlewares to the store we just add them here to the array
-const middlewares = [logger];
+const middlewares = [];
+
+//this way, when we go building for production, there will be no logger
+if (process.env.NODE_ENV === 'development') {
+  middlewares.push(logger);
+}
 
 export const store = createStore(rootReducer, applyMiddleware(...middlewares));
 
