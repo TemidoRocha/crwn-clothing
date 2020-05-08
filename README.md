@@ -1,5 +1,8 @@
 complete-react-developer-zero-to-mastery
 
+E-Comerce Web page:
+https://crwn-temidorocha.herokuapp.com/
+
 1. firebase
 2. redux
 3. redux-logger - https://www.npmjs.com/package/redux-logger
@@ -25,4 +28,10 @@ complete-react-developer-zero-to-mastery
 - Persist and rehydrate a redux store.
 
 8. Stripe
+
 - https://github.com/azmenak/react-stripe-checkout#send-all-the-props
+
+9. Deploying to Heroku
+
+- https://devcenter.heroku.com/articles/heroku-cli
+- https://github.com/mars/create-react-app-buildpack
