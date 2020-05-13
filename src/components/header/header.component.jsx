@@ -28,7 +28,9 @@ const Header = ({ currentUser, hidden }) => (
       ) : (
         <OptionLink to="/signin">SIGN IN</OptionLink>
       )}
-      {currentUser ? <CartIcon /> : null}
+      <CartIcon />
+      {/* Like this line bellow, the CartIcon would appear only if the user is logged, but, since we want to show the features, we will leave it always open */}
+      {/* {currentUser ? <CartIcon /> : null} */}
     </OptionsContainer>
     {hidden ? null : <CartDropdown />}
   </HeaderContainer>

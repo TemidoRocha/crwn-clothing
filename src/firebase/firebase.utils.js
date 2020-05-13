@@ -28,8 +28,12 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
   if (!userAuth) return;
 
   const userRef = firestore.doc(`users/${userAuth.uid}`);
-
   const snapShot = await userRef.get();
+
+  // for training:
+  // const collectionRef = firestore.collection('users');
+  // const collectionSnapshot = await collectionRef.get();
+  // console.log({collection: collectionSnapshot.docs.map(doc=>doc.data())});
 
   if (!snapShot.exists) {
     const { displayName, email } = userAuth;
@@ -49,12 +53,13 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
   return userRef;
 };
 
+//this function is to turn the array we get from the firebase and transform  it in an object
 export const convertCollectionsSnapshotToMap = (collections) => {
   const transformedColelction = collections.docs.map((doc) => {
     const { title, items } = doc.data();
 
     return {
-      routeName: encodeURI(title.toLowerCase()),
+      routeName: encodeURI(title.toLowerCase()), //JS method where you pass a string and gives you back a string that a url can be read
       id: doc.id,
       title,
       items,
