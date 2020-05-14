@@ -9,15 +9,25 @@ import { selectCartHidden } from '../../redux/cart/cart.selectors';
 import { selectCurrentUser } from '../../redux/user/user.selector';
 
 import { ReactComponent as Logo } from './../../assets/crwn.svg';
+import GitHub from '../../assets/GitHub-Mark-120px-plus.png';
 
-import { HeaderContainer, OptionsContainer, LogoContainer, OptionLink } from './header.styles';
+import {
+  HeaderContainer,
+  OptionsContainer,
+  LogoContainer,
+  GitHubProjectLink,
+  OptionLink,
+} from './header.styles';
 
 const Header = ({ currentUser, hidden }) => (
   <HeaderContainer>
     <LogoContainer to="/">
-      <Logo className="logo" />
+      <Logo />
     </LogoContainer>
     <OptionsContainer>
+      <GitHubProjectLink href="https://github.com/TemidoRocha/crwn-clothing" target="_blank">
+        <img src={GitHub} alt="github project link" />
+      </GitHubProjectLink>
       <OptionLink to="/shop">SHOP</OptionLink>
       <OptionLink to="/contact">CONTACT</OptionLink>
       {currentUser ? (

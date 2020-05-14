@@ -15,6 +15,14 @@ export const LogoContainer = styled(Link)`
   padding: 25px;
 `;
 
+export const GitHubProjectLink = styled.a`
+  padding: 10px 15px;
+  cursor: pointer;
+  img {
+    height: 50px;
+  }
+`;
+
 export const OptionsContainer = styled.div`
   width: 50%;
   height: 100%;

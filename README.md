@@ -26,26 +26,38 @@ https://crwn-temidorocha.herokuapp.com/
 ## 2.4. Redux Thunk - https://www.npmjs.com/package/redux-thunk
 
 Redux Thunk middleware allows you to write action creators that return a function instead of an action. The thunk can be used to delay the dispatch of an action, or to dispatch only if a certain condition is met. The inner function receives the store methods dispatch and getState as parameters.
+if redux-thunk middleware is enabled, any time you attempt to dispatch a function instead of an Object,
+the middleware will call that function with dispatch method itself as the first argument
 
-6. UTF-8 Dingbats - https://www.w3schools.com/charsets/ref_utf_dingbats.asp
-7. Window.seesionStorage and localStorage differ
+## 2.5 redux-persist - https://www.npmjs.com/package/redux-persist
 
-- localStorage is similar to sessionStorage, except that while data stored in localStorage has no expiration time, data stored in sessionStorage gets cleared when the page session ends — that is, when the page is closed.
-- https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage
-- https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
-  .8 redux-persist - https://www.npmjs.com/package/redux-persist
 - Persist and rehydrate a redux store.
 
-8. Stripe
+Window.sessionStorage and localStorage differ
+a. localStorage is similar to sessionStorage, except that while data stored in localStorage has no expiration time, data stored in sessionStorage gets cleared when the page session ends — that is, when the page is closed.
+b. https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage
+c. https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+
+## 2.6 redux-saga - https://www.npmjs.com/package/redux-saga
+
+- takeLatest, take, takeEvery, delay, put (https://github.com/ZhangMYihua/redux-saga-take-takelatest-takeevery)
+
+3. UTF-8 Dingbats - https://www.w3schools.com/charsets/ref_utf_dingbats.asp
+
+4. Stripe
 
 - https://github.com/azmenak/react-stripe-checkout#send-all-the-props
 
-9. Deploying to Heroku
+5. Deploying to Heroku
 
 - https://devcenter.heroku.com/articles/heroku-cli
 - https://github.com/mars/create-react-app-buildpack
 
-10. CSS in JS
+6. CSS in JS
 
 - http://getbem.com/
 - https://styled-components.com/
+
+7. Generator Functions - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*
+
+- the idea is to able to pause a function according to our needs
