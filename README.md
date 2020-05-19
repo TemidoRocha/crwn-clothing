@@ -18,6 +18,7 @@ https://crwn-temidorocha.herokuapp.com/
 - function connect(mapStateToProps?, mapDispatchToProps?, mergeProps?, options?)
 
   2.3. reselect - https://www.npmjs.com/package/reselect
+  A selector is a function that accepts Redux state as an argument and returns data that is derived from that state. Selectors can provide performance optimizations to your application and can also help you encapsulate your global state tree. If your application is growing large and unwieldy, you may benefit from creating your own selectors or using a library such as Reselect, which utilizes memoized selectors.
 
 - Selectors can compute derived data, allowing Redux to store the minimal possible state.
 - Selectors are efficient. A selector is not recomputed unless one of its arguments changes.
