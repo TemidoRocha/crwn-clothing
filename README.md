@@ -47,6 +47,7 @@ c. https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 ## 4. Stripe
 
 - https://github.com/azmenak/react-stripe-checkout#send-all-the-props
+- https://www.npmjs.com/package/stripe
 
 ## 5. Deploying to Heroku
 
@@ -63,3 +64,7 @@ c. https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 - the idea is to able to pause a function according to our needs
 
 ## 8. React Hooks - https://reactjs.org/docs/hooks-intro.html
+
+## Node server
+
+- https://www.npmjs.com/package/concurrently
