@@ -81,3 +81,5 @@ c. https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 - https://reactjs.org/docs/react-api.html#reactpurecomponent
 
 ## 9.3 compression library
+
+- https://www.npmjs.com/package/compression
