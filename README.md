@@ -69,3 +69,13 @@ c. https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 ## Node server
 
 - https://www.npmjs.com/package/concurrently
+
+## 9. Avoid unnecessary rerender of components. (also shouldComponentUpdate() , useCallback() vs useMemo() )
+
+## 9.1 React Memo -> for functions
+
+- https://reactjs.org/docs/react-api.html#reactmemo
+
+## 9.2 React PureComponent -> for classes
+
+- https://reactjs.org/docs/react-api.html#reactpurecomponent
