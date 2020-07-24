@@ -83,3 +83,5 @@ c. https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 ## 9.3 compression library
 
 - https://www.npmjs.com/package/compression
+
+# 10 PWA compliance 
